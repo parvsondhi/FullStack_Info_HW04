@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW4 | Soundcloud </title>
+
+    <link rel="stylesheet" href="./src/_css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/_css/now-ui-dashboard.min.css">
+    <link rel="stylesheet" href="./src/_css/style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <div class="container text-center">
+                <a href="https://soundcloud.com/" target="_blank">
+                    <img id="logo" src="./src/_assets/soundcloud.png" alt="soundcloud">
+                </a>
+            </div>
+            <section class="container">
+                <div class="input-group no-border row">
+                    <input type="text" id="input-search" class="form-control" placeholder="Search for Artists, Bands, Podcasts ... ">
+                </div>
+                <div class="row">
+                    <div class="col col-sm-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Results</h3>
+                                <div id="active-query" class="subtitle invisible"> 
+                                    <strong>Query: </strong>
+                                    <em></em>
+                                </div>
+                            </div>
+                            <div id="result-list">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                            <div class="card">
+                                <div class="card-header playlist-header">
+                                    <div>
+                                        <h3>Playlist</h3>
+                                        <span id="playlist-button"></span>
+                                    </div>
+
+                                    <div id="" class="subtitle invisible"> 
+                                        <strong></strong>
+                                        <em></em>
+                                    </div>
+                                </div>
+                                <div id="playlist">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+    </div>
+
+    <script type="text/javascript" src="./src/_js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+    <script type="text/javascript" src="./src/_js/app.js"></script>
+    
+</body>
+</html>
