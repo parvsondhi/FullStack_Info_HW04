@@ -1,0 +1,207 @@
+
+html, body {
+    background-color: #ED602B;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: #ED602B;
+    background: url("../_assets/background.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;  
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+#logo {
+    margin-top: 100px;
+}
+
+#input-search {
+    margin: 25px 0;
+    font-size: 16pt;
+    padding: 15px 25px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    box-shadow: 0 1px 15px 1px rgba(39,39,39,.1);
+}
+
+#input-search:active, #input-search:focus {
+    background-color: rgba(255,255,255, 0.95);
+}
+
+#input-search::placeholder {
+    color: rgba(0,0,0,0.6);
+}
+
+section .row .col:first-of-type {
+    padding-left: 0;
+}
+
+section .row .col:last-of-type {
+    padding-left: 0;
+}
+
+.card-header h3 {
+    margin-bottom: 0;
+}
+
+.card-header .subtitle {
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+.card-header .subtitle {
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+.playlist-header h3 {
+    display: inline-block;
+}
+
+#playlist-button {
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-image: url("../_assets/ic_play_black.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+} 
+
+#playlist-button:hover {
+    cursor: pointer;
+}
+
+#playlist-button.playing {
+    background-image: url("../_assets/ic_pause_black.png");
+}
+
+.invisible {
+    opacity: 0 !important;
+}
+
+.query-result {
+    padding: 5px;
+    position: relative;
+}
+
+.query-result:hover {
+    cursor: pointer;
+    background: RGBA(255, 146, 0, 0.4);
+}
+
+.query-result .avatar-container {
+    position: relative;
+    display: inline-block;
+    width: 105px;
+}
+
+.query-result img.avatar {
+    width: 90px;
+    height: 90px;
+    border: 0 none transparent;
+    overflow: hidden;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.avatar-container:hover:before {
+    content: "";
+    background-color: #FF9200;
+    opacity: 0.95;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    pointer-events: none;
+}
+
+.avatar-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 1.0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url("../_assets/ic_play_white.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.avatar-container.playing:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 1.0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url("../_assets/ic_pause_white.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.query-result .content-container {
+    display: inline-block;
+    width: calc(100% - 105px);
+    vertical-align: middle;
+}
+
+.query-result .order-container {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: rgba(0,0,0,0.01);
+    top: 0;
+    right: -20;
+}
+
+.query-result .order-container .up {
+    height: 50%;
+    background-image: url("../_assets/ic_sortup_black.png");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.query-result .order-container .down {
+    height: 50%;
+    background-image: url("../_assets/ic_sortdown_black.png");
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.query-result .order-container .up:hover,
+.query-result .order-container .down:hover {
+    cursor: pointer;
+    background-size: 20px 20px;
+}
