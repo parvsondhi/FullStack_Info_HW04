@@ -137,9 +137,9 @@ function didSelectSongFromResults(event) {
 	}
 
 	if (selectedSong) {
-		playlist.push(selectedSong);
+		playlist.unshift(selectedSong);
 		let playlistHTML = createHTMLForPlaylistSong(selectedSong);
-		$('#playlist').append(playlistHTML);
+		$('#playlist').prepend(playlistHTML);
 	}	
 }
 
