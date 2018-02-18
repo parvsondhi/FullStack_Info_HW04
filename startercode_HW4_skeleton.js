@@ -10,6 +10,14 @@ function callAPI(query) {
 	);
 }
 
+// Parses Soundcloud results object and displays results
+	function parseScResponse(object) {
+
+		//for i in object:
+			//insert <tr> in #results table
+
+	}
+
 // 'Play' button event handler - play the track in the Stratus player
 function changeTrack(url) {
 	// Remove any existing instances of the Stratus player
@@ -24,4 +32,20 @@ function changeTrack(url) {
     });
 }
 
+ // Move song in playlist up in the queue
+ function moveUp() {
+	 
+ }
 
+ // Move song in playlist down in the queue
+ function moveDown() {
+
+ }
+ // Add Song to top of playlist
+ function addToPlaylist() {
+
+ }
+ // Remove Song from playlist
+ function removeFromPlaylist() {
+
+ }
