@@ -1,0 +1,242 @@
+body {
+	background-color: teal;
+	font-family: Helvetica;
+}
+
+header > img {
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: Helvetica;
+	color: white;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+input {
+	margin-top: 20px;
+	padding-top: 5px;
+	width: 500px;
+	border-radius: 3px;
+	font-size: 14;
+	padding-bottom: 5px;
+	justify-content: center;
+	color: grey;
+	padding-left: 5px;
+}
+
+#submitter {
+	margin-top: 20px;
+	margin-left: 10px;
+	border-radius: 3px;
+	padding-left: 2px;
+    padding-top: 0px;
+    border-style: none;
+    background-color: rgb(98,159,160);
+}
+
+.information button {
+	margin-left: 0px;
+	background-color: none;
+	margin-right: 8px;
+	border-radius: 5px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 10px;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
+}
+
+.information img {
+    float: left;
+    height: 8px;
+    width: 8px;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-right: 8px;
+}
+
+.buttons button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	background-color: none;
+	border-radius: 5px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
+}
+
+.buttons img {
+    float: left;
+    height: 8px;
+    width: 8px;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-right: 8px;
+}
+
+.playURL {
+	display: none;
+}
+
+.addToPlaylist {
+	width: 140px; 
+}
+
+.remove .buttonContainer img {
+	width: 10px;
+	height: 1px;
+	padding-left: 2px;
+	padding-top: 5px;
+}
+
+.buttonContainer {
+	display: inline-block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#results {
+	margin-top: 20px;
+
+}
+
+#searchResults {
+	float: left;
+}
+
+
+#logo {
+	width:20px;
+	flex: right;
+}
+
+.smallIcon {
+	width:5px;
+	height: 5px;
+}
+
+.information {
+	display: block;
+	margin-left: 15px;
+}
+
+.cover {
+	width: 80px;
+	height: 80px;
+}
+
+.user {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: black;
+	display: block;
+	margin-top: 0px;
+}
+
+.title {
+	display: block;
+	margin-top: 3px;
+	font-size: 14px;
+	color: white;
+	height: 30px;
+}
+
+#searchResults .title {
+	width: 250px;
+}
+
+#playlist .title {
+	width: 230px;
+}
+
+.card {
+	margin-right: 0px;
+	border-radius: 3px;
+	text-align: left;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 5px;
+	overflow: auto;
+	display: flex;
+	width: 380px;
+}
+
+.column {
+    float: left;
+    height: 67vh;
+	width: 390px;
+	background-color: rgb(98,159,160);
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	overflow: scroll;
+}
+
+.upAndDownContainer {
+	display: block;
+}
+
+.up {
+	display: block;
+	border-style: none;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
+}
+
+.down {
+	margin-top: 5px;
+	border-style: none;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
+}
+
+.up img {
+	width: 15px;
+	height: 15px;
+}
+
+.down img {
+	width: 15px;
+	height: 15px;
+}
+
+#playlist .card {
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#playlist .playSong {
+	float: right;
+	margin-right: 0px;
+}
+
+.remove {
+	width: 75px; 
+	font-size: 9px;
+	float: right;
+	margin-right: 0px;
+}
