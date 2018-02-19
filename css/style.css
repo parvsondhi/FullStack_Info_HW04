@@ -34,20 +34,15 @@ input {
 	padding-left: 5px;
 }
 
-button {
+#submitter {
 	margin-top: 20px;
 	margin-left: 10px;
 	border-radius: 3px;
 	padding-left: 2px;
-    padding-top: 3px;
+    padding-top: 0px;
     border-style: none;
     background-color: rgb(98,159,160);
 }
-
-
-/*.playSong {
-	width: 100px;
-}*/
 
 .information button {
 	margin-left: 0px;
@@ -57,6 +52,10 @@ button {
 	border-color: white;
 	border-style: solid;
 	border-width: 1px;
+	margin-top: 10px;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
 }
 
 .information img {
@@ -77,6 +76,9 @@ button {
 	border-color: white;
 	border-style: solid;
 	border-width: 1px;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
 }
 
 .buttons img {
@@ -96,7 +98,7 @@ button {
 	width: 140px; 
 }
 
-#playlist .remove .buttonContainer img {
+.remove .buttonContainer img {
 	width: 10px;
 	height: 1px;
 	padding-left: 2px;
@@ -105,8 +107,8 @@ button {
 
 .buttonContainer {
 	display: inline-block;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 #results {
@@ -131,11 +133,10 @@ button {
 
 .information {
 	display: block;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 .cover {
-	disp
 	width: 80px;
 	height: 80px;
 }
@@ -145,25 +146,27 @@ button {
 	font-size: 12px;
 	color: black;
 	display: block;
-	margin-top: 10px;
+	margin-top: 0px;
+}
+
+.title {
+	display: block;
+	margin-top: 3px;
+	font-size: 14px;
+	color: white;
+	height: 30px;
 }
 
 #searchResults .title {
-	display: block;
-	margin-top: 10px;
-	width: 400px;
-	font-size: 14px;
+	width: 250px;
 }
 
 #playlist .title {
-	display: block;
-	margin-top: 10px;
-	width: 300px;
-	font-size: 14px;
+	width: 230px;
 }
 
 .card {
-	margin-right: 7px;
+	margin-right: 0px;
 	border-radius: 3px;
 	text-align: left;
 	margin-top: 6px;
@@ -171,17 +174,17 @@ button {
 	padding: 5px;
 	overflow: auto;
 	display: flex;
-	width: 480px;
+	width: 380px;
 }
 
 .column {
     float: left;
-    height: 70vh;
-	width: 550px;
+    height: 67vh;
+	width: 390px;
 	background-color: rgb(98,159,160);
 	border-radius: 5px;
 	margin-top: 10px;
-	margin-right: 20px;
+	margin-right: 10px;
 	margin-left: 10px;
 	padding-left: 10px;
 	overflow: scroll;
@@ -193,10 +196,18 @@ button {
 
 .up {
 	display: block;
+	border-style: none;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
 }
 
 .down {
 	margin-top: 5px;
+	border-style: none;
+	padding-left: 2px;
+    padding-top: 0px;
+    background-color: rgb(98,159,160);
 }
 
 .up img {
@@ -229,5 +240,3 @@ button {
 	float: right;
 	margin-right: 0px;
 }
-
-
