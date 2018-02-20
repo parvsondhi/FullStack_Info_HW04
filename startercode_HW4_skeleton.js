@@ -1,8 +1,8 @@
-//
+// Event Handler for Search Button
 
 $("#new-item").on('click', function() {
 	var input = $("#searchbar").val();
-	alert(input);
+	callAPI(input);
 });
 
 // Event hander for calling the SoundCloud API using the user's search query
@@ -19,10 +19,15 @@ function callAPI(query) {
 // Parses Soundcloud results object and displays results
 	function parseScResponse(object) {
 
-		alert(object.length);
-		//for i in object:
-			//insert <tr> in #results table
+		// If value.artwork_url == 'null', use default SC icon
 
+		$.each(object, function( index, value ) {
+			$('#results').append("<tr>")
+			$('#results').append("<td><img src=" + value.artwork_url + "></img></td>")
+			$('#results').append("<td>" + value.title + "</td>")
+			$('#results').append("<td><button class='btn play' value=" + value.permalink_url + ">Play</button></td>")
+			$('#results').append("</tr>")//permalink_url
+		});
 	}
 
 // 'Play' button event handler - play the track in the Stratus player
