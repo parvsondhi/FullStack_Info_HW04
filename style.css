@@ -2,11 +2,8 @@ body{
 	font-family: 'Calibri';
 	background: #222222;
 	color: #55c181;
+	margin: auto;
 
-}
-
-section{
-	display: block;
 }
 
 
@@ -14,12 +11,22 @@ td{
 	font-size: 12px;
 }
 
+header{
+	padding-top: 0.25%;
+	margin-left: 1%;
+	display: none;
+}
+
+section{
+	margin-left: 1%;
+}
 
 button{
 	background:#222222;
 	color:#55c181;
 	border-color: red;
 }
+
 
 #c{
 	position: fixed;
@@ -37,6 +44,7 @@ button{
 
 .play {
 	font-size: 10px;
+
 }
 
 .up {
@@ -54,10 +62,11 @@ button{
 }
 
 .main_sect{
-	display: inline-block;
+	/*display: inline-block;*/
+	display: none;
 	border: solid #55c181 1px;
 	vertical-align: top;
-	max-width: 49%;
+	max-width: 48.5%;
 }
 
 .main_sect tr{
@@ -78,6 +87,17 @@ button{
 	color:white;
 }
 
+.up {
+	width: 70%;
+}
+
+.down{
+	width: 70%;
+}
+
+#SearchSect{
+	display: none;
+}
 
 /*Matrix CSS*/
 

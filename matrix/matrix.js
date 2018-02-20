@@ -1,6 +1,13 @@
 // Credits to adrian_gheorghe
 // https://code.sololearn.com/Wj7ZWBg5m2OG/#html
 
+setTimeout(function(){
+    $('.main_sect').css({ "display": "inline-block"});
+    $('#SearchSect').css({ "display": "block"});
+    $('header').css({ "display": "block"});
+    //do what you need here
+}, 2500);
+
 // geting canvas by id c
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
