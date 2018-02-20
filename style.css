@@ -1,0 +1,128 @@
+body{
+	font-family: 'Calibri';
+	background: #222222;
+	color: #55c181;
+
+}
+
+section{
+	display: block;
+}
+
+
+td{
+	font-size: 12px;
+}
+
+
+button{
+	background:#222222;
+	color:#55c181;
+	border-color: red;
+}
+
+#c{
+	position: fixed;
+	z-index:-1;
+}
+
+.pic{
+	width: 50px;
+}
+
+.add {
+	font-size: 10px;
+	float: right;
+}
+
+.play {
+	font-size: 10px;
+}
+
+.up {
+	font-size: 10px;
+}
+
+.down {
+	font-size: 10px;
+}
+
+
+.user_input{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.main_sect{
+	display: inline-block;
+	border: solid #55c181 1px;
+	vertical-align: top;
+	max-width: 49%;
+}
+
+.main_sect tr{
+	border: solid #55c181 1px;
+
+}
+
+.main_sect th{
+	border: solid #55c181 1px;
+	background: #222222;
+}
+
+.main_sect td{
+	border-bottom: solid #55c181 1px;
+	text-decoration-color: red;
+	text-shadow: red;
+	font-size: 1em;
+	color:white;
+}
+
+
+/*Matrix CSS*/
+
+#author {
+                position: fixed;
+                bottom: 10px;
+                left: 10px;
+                color : red;
+                z-index : 1;
+                box-sizing: border-box;
+                vertical-align: middle;
+                background: #000000;
+            }
+        	
+            @font-face {
+		    font-family: mine;
+    		src: url(fonts/RedOctober-Regular.ttf);
+    		/*src: url(fonts/RedOctober-Fat.ttf);*/
+    		/*src: url(fonts/RedOctober-Regular.ttf);*/
+    		/*src: url(fonts/RedOctober-Regular.ttf);*/
+			}
+
+            span {
+                font-family: mine;
+                font-size: 1.2em;
+            }
+            span:after {
+                content:"хитыроглу.д";
+                opacity: 0;
+                animation: cursor 1s infinite;
+            }
+            @keyframes cursor {
+                0% {
+                    opacity: 0;
+                }
+                40% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                90% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }

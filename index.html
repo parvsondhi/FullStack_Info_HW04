@@ -1,0 +1,105 @@
+<!--
+1. User sees labeled ‘To Do’ and ‘Doing’ lists, which are empty upon page load. The lists are visually distinct from each other.
+2. User can add one ‘To Do’ item at a time using a text input field and an ‘Add Item’ button.
+3. Each newly-added ‘To Do’ item appears at the top of the ‘To Do’ list (not the bottom).
+4. User can click a button within each ‘To Do’ item to mark it as complete, at which point:
+a. The ‘To Do’ item disappears from the ‘To Do’ list
+b. The ‘To Do’ item appears at the top of the ‘Doing’ list.
+c. Items on the ‘Doing’ list should be styled differently than those on the ‘To Do’ list as an additional visual indication of their completion.
+5. User can click a button within each ‘Doing’ item to ‘unmark’ it as complete, at which point:
+a. The ‘Doing’ item disappears from the ‘Doing’ list.
+b. The ‘Doing’ item appears at the top of the ‘To Do’ list with the same styling as the other ‘To Do’ list items.
+6. Items on each list remain there until the user marks or ‘unmarks’ them.
+7. Your site has a title and intuitive labeling or instructions on how to use it.
+8. You can use only jQuery and JavaScript – no additional plugins/libraries.
+9. Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
+10. All of your JavaScript is commented appropriately.
+11. Your code is clean and concise (minimal repetition and unused code)-->
+
+<!--
+
+Extra Credit (4 pts):
+1. Add a 'Done' section
+2. User can move items from the 'Doing' list to the 'Done' list
+3. User can move itesm from the 'Done' list to the 'Doing' list
+4. Items on the 'Done' list should be styled differently than those on the ‘To Do’ and 'Doing' lists as an additional visual indication of their completion. 
+-->
+
+<html>
+    <head>
+
+        <title> HW04 Soundcloud HW </title>
+        
+        <!-- Materialize CSS -->
+        <!-- <link rel="stylesheet" href="materialize/css/materialize.css"> -->
+        
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- JQuery -->
+        <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+        <!-- Stratus Player -->
+        <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+        
+        
+
+    </head>
+    
+    <body>
+        <canvas id="c" ></canvas>
+        <span id = "author">@</span>
+        <header>
+            
+            <h1>The Coolest Most Badass Streaming Service, powered by Soundcloud(c)</h1>
+
+        </header>
+
+
+<!-- Search Section -->
+        <section id="SearchSect">
+            
+            <div class="user_input">
+                <input type="text" name="Search" id="search">
+                <!-- <input type="submit" value="Submit" id="submit"> -->
+                <button id="submit">Submit</button>
+            </div> 
+
+        </section>
+
+        
+<!-- Results Section -->
+        <section class="main_sect" id="ResultsSect">
+            
+            <table>
+                <tr>
+                    <th>Artwork</th>
+                    <th>Title</th> 
+                    <th>Artist</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+
+        </section>
+
+
+<!-- playlist Section -->
+        <section class="main_sect" id="PlaylistSect">
+
+            <table>
+                <tr>
+                    <th>Artwork</th>
+                    <th>Title</th> 
+                    <th>Artist</th>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </body>
+    <!-- My JS -->
+    <script type="text/javascript" src="startercode_HW4_skeleton.js"></script>
+    <script type="text/javascript" src="matrix/matrix.js"></script>
+</html>
