@@ -1,11 +1,17 @@
+//
+
+$("#new-item").on('click', function() {
+	var input = $("#searchbar").val();
+	alert(input);
+});
+
 // Event hander for calling the SoundCloud API using the user's search query
 function callAPI(query) {
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
 		{'q': query,
 		'limit': '200'},
 		function(data) {
-			// PUT IN YOUR CODE HERE TO PROCESS THE SOUNDCLOUD API'S RESPONSE OBJECT
-			// HINT: CREATE A SEPARATE FUNCTION AND CALL IT HERE
+			parseScResponse(data);
 		},'json'
 	);
 }
@@ -13,6 +19,7 @@ function callAPI(query) {
 // Parses Soundcloud results object and displays results
 	function parseScResponse(object) {
 
+		alert(object.length);
 		//for i in object:
 			//insert <tr> in #results table
 
@@ -32,20 +39,22 @@ function changeTrack(url) {
     });
 }
 
+// Add Song to top of playlist
+function addToPlaylist() {
+
+}
+
+// Remove Song from playlist
+function removeFromPlaylist() {
+
+}
+
  // Move song in playlist up in the queue
  function moveUp() {
-	 
+
  }
 
  // Move song in playlist down in the queue
  function moveDown() {
-
- }
- // Add Song to top of playlist
- function addToPlaylist() {
-
- }
- // Remove Song from playlist
- function removeFromPlaylist() {
 
  }
