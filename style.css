@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right, #DB4008, #E2741B);
+   color: #fff;
+   font-family: Helvetica;
+   width: 100%;
+   margin: auto;
+   margin-left: 40px;
+   margin-top: 50px;
+}
+
+p {
+    font-size: 10pt;
+    width: 80%;
+}
+
+.search {
+    display: block;
+}
+
+#search-input {
+    width: 30%;
+}
+
+#logo {
+    width: 100px;
+    padding-bottom: 15px;
+    margin-left: 40%;
+}
+
+#artcol {
+    width: 50px;
+}
+
+#titlecol {
+    width: auto;
+}
+
+.title{
+    width: auto;
+}
+
+#artistcol {
+    width: auto;
+}
+
+.artist {
+    width: auto;
+}
+
+#actioncol {
+    width: 30px;
+}
+
+.playbtn {
+    width: 30px;
+}
+
+.playlistbtn{
+    width: 30px;
+}
+
+table{
+    border: 1px solid white;
+    width: 100%;
+    table-layout: fixed;
+    max-width: 500px;
+}
+
+
+tr{
+    border: 1px solid white;
+    display: table-row;
+
+    max-width: 400px;
+}
+
+td{
+    border: 1px solid white;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+th{
+    border: 1px solid white;
+    width: 19%;
+}
+
+
+
+.results-playlist-div {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.search-results{
+    display: inline-block;
+    width: 40%;
+    margin-right: 40px;
+}
+
+.playlist{
+    display: inline-block;
+    width: 40%;
+}
+
+.art {
+    width: 50px;
+    height: 50px;
+}
