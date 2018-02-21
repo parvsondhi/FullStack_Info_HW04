@@ -1,12 +1,14 @@
 // Credits to adrian_gheorghe
 // https://code.sololearn.com/Wj7ZWBg5m2OG/#html
 
-setTimeout(function(){
-    $('.main_sect').css({ "display": "inline-block"});
-    $('#SearchSect').css({ "display": "block"});
-    $('header').css({ "display": "block"});
-    //do what you need here
-}, 2500);
+
+// Initial timeout function for load effect, only worked nice on my screen.
+// setTimeout(function(){
+//     $('.main_sect').css({ "display": "inline-block"});
+//     $('#SearchSect').css({ "display": "block"});
+//     $('header').css({ "display": "block"});
+//     //do what you need here
+// }, 2500);
 
 // geting canvas by id c
 var c = document.getElementById("c");
@@ -18,9 +20,9 @@ c.width = window.innerWidth;
 // English matrix
 // var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
 // Greek matrix
-var matrix = "ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω123456789@#$%^&*()*&^%";
+var matrix = "ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω123456789#$%^&*()*&^%";
 // Russian matrix
-// var matrix = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя123456789@#$%^&*()*&^%";
+// var matrix = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя123456789#$%^&*()*&^%";
 
 //converting the string into an array of single characters
 matrix = matrix.split("");
@@ -51,11 +53,21 @@ function draw()
         ctx.fillText(text, i * font_size, drops[i] * font_size);
         //sending the drop back to the top randomly after it has crossed the screen
         //adding a randomness to the reset to make the drops scattered on the Y axis
-        if( drops[i] * font_size > c.height && Math.random() > 0.975 )
+        if( drops[i] * font_size > c.height && Math.random() > 0.975 ){
             drops[i] = 0;
+
+            // If the drops have reached the bottom, change the CSS for load effect
+            var check = 0;
+            if( check == 0){
+                $('.main_sect').css({ "display": "inline-block"});
+                $('#SearchSect').css({ "display": "block"});
+                $('header').css({ "display": "block"});
+                check++
+            }
+        }
         //incrementing Y coordinate
         drops[i]++;
     }
 }
-setInterval( draw, 35 );
+setInterval( draw, 45 );
 // document.body.style.background = 'url(' + c.toDataURL() + ')';

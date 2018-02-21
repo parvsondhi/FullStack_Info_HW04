@@ -27,6 +27,18 @@ button{
 	border-color: red;
 }
 
+input{
+	background: #222222;
+	color: #55c181;
+	border: solid #55c181;
+	width: 30%;
+}
+
+p{
+	background-color: #000000;
+	color: #aaaaaa;
+}
+
 
 #c{
 	position: fixed;
@@ -44,6 +56,7 @@ button{
 
 .play {
 	font-size: 10px;
+	font-weight: bold;
 
 }
 
@@ -67,6 +80,7 @@ button{
 	border: solid #55c181 1px;
 	vertical-align: top;
 	max-width: 48.5%;
+	width:48.5%;
 }
 
 .main_sect tr{
