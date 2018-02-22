@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#table-search {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 550px;
+}
+
+#table-playlist {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 800px;
+}
+thead, th{
+    border: none;
+}
+
+#results {
+	display: flex;
+}
+
+#search_results {
+    float: left;
+    width: 580px;
+}
+
+#playlist {
+    float: right;
+    width:800px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: #FF5D00; 
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
