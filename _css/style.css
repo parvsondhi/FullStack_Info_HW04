@@ -1,0 +1,99 @@
+header {
+	background-color: #ff7700;
+	height: 60px;
+	text-align: center;
+	padding: 5px 8px;
+}
+
+header a {
+	height: 60px;
+	width: 160px;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url(https://a-v2.sndcdn.com/assets/images/header/cloud@2x-e5fba46.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+body {
+	background-color: #FF7700;
+	margin: 0px;
+	font-family: 'Verdana';
+}
+
+body button, input{
+	border-radius: 4px;
+	padding: 8px 38px;
+	font-size: 12px;
+}
+
+/* Add Your CSS */
+.description {
+	display: grid;
+	text-align: left;
+	font-size: 12px;
+}
+.search-bar {
+	text-align: center;
+}
+
+#search-item-input{
+	height: 38px;
+	width: 350px;
+}
+
+#new-item {
+	border-radius: 2px;
+	background-color: #0088FF;
+  color: white;
+	padding: 10px 50px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+#new-item:hover {
+	background-color: white;
+  color: #FDB515;
+}
+
+.list_ {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	text-align: center;
+	font-size: 10px;
+}
+
+#list_title {
+	background-color: white;
+	text-align: center;
+	vertical-align: top;
+	height: auto;
+}
+
+#list_result {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#list_playlist {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.list_ table, th, tr, td{
+	border: 2px black;
+	font-size: 12px;
+}
+
+.list_ img{
+	height: auto;
+	width: 35px;
+}
+
+.list_ button {
+	width: 30px;
+	height: 50px;
+	font-size: 8px;
+	text-align: center;
+}
