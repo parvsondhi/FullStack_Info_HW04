@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>SoundCloud</title>
+    <link rel="stylesheet" href="_css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+</head>
+    <body>
+            <header>
+                <h1>Soundcloud Search</h1>
+            </header>
+
+            <section>
+                <p>
+                    Enter something to search. Use the play button to play. Use the add to playlist button to add to playlist. Use the remove from playlist button to remove from playlist. Use the up and down buttons to move songs up and down in the playlist.
+                </p>
+                <div>
+                    <input id="search_input">
+                    <button id="search_button">search</button>
+                </div>
+                <div class="splitdiv">
+                    <h2>Search Results</h2>
+                    <table>
+                      <tr>
+                        <th>Artwork</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                      </tr>
+                      <tbody id="search_list"></tbody>
+                    </table>
+                </div>
+                <div class="splitdiv">
+                    <h2>Playlist</h2>
+                    <table>
+                      <tr>
+                        <th>Artwork</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                      </tr>
+                      <tbody id="playlist"></tbody>
+                    </table>
+                </div>
+            </section>
+            <script type="text/javascript" src="_js/main.js"> </script>
+
+    </body>
+</html>
