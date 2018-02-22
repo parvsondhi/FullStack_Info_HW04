@@ -1,0 +1,109 @@
+html, body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #FF4500;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#main-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.search {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+#input {
+  width: 500px;
+  height: 30px;
+  padding-left: 5px;
+  margin-right: 20px;
+  font-size: 17px;
+}
+
+#searchButton {
+  height: 32px;
+  width: 100px;
+  background-color: #FF4500;
+  font-size: 15px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.results-playlist {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  display: inline-block;
+  width: 550px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+tr {
+  padding-bottom: 30px;
+  max-width: 500px;
+}
+
+td {
+  max-width: 125px;
+  vertical-align: middle;
+  padding: 10px;
+  padding-bottom: 30px;
+  width: 20%;
+}
+
+
+button.play-button {
+  text-align: center;
+  background-color: #FF4500;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+input.playlistButton {
+  width: 30px;
+  height: 30px;
+}
+
+.deleteSong {
+  width: 20px;
+  height: 20px;
+}
+
+.upSong {
+  width: 15px;
+  height: 15px;
+}
+
+.downSong {
+  width: 15px;
+  height: 15px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
