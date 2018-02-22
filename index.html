@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Sound Cloud</title>
+      <!--  Scripts-->
+      <script src ="https://code.jquery.com/jquery-1.7.0.min.js"></script>
+      <script src ="https://stratus.soundcloud.com/stratus.js"></script>
+      <!--  CSS -->
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+  <body>
+    <h3>Soundcloud Search</h3>
+    <p>Enter something to search for songs. Use the play button to play the song. Use the "Add to Playlist" button to add the song into playlist. Use the "Remove from Playlist" to remove the song from the playlist. Use the up and down button to move songs up and down in the playlist</p>
+    <form id="searchbar">
+      <input id="search" type="search"><button id="searchbtn">Search</button>
+    </form>
+    <div class="container">
+      <div class="headline"><h4>Search Results</h4></div>
+      <div class="headline"><h4>Playlist</h4></div>
+      <div class="section" id="songs">
+        
+        <!-- <div id='divID' class='row'>
+          <img src='https://images.sftcdn.net/images/t_optimized,f_auto/p/e93231a2-9a65-11e6-a5ce-00163ed833e7/3269459794/soundcloud-logo.png'>
+          <h5>Title</h5>
+          <h6>ArtistName</h6>
+          <button id='playID'>Play</button>
+          <button class='add-to-list' id='addID' >Add to playlist</button>
+          <button class='remove-from-list' id='removeID' >Remove from playlist</button>
+          <button class='upbtn' >^</button>
+          <button class='downbtn' >v</button>
+        </div> -->
+      </div>
+      
+      <div class="section" id="playlist"></div>
+    </div>
+    <!--  Scripts-->
+    <script type="text/javascript" src="js/soundcloud.js"></script>
+  </body>
+</html>
