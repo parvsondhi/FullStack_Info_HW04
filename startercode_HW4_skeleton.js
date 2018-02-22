@@ -72,6 +72,7 @@ function compileResults(icon, title, username, url) {
 // Play the song when clicking the play button
 $(document).on('click', '.play-button', function() {
 	var url = $(this).attr('value');
+	console.log(url);
 	changeTrack(url);
 })
 
