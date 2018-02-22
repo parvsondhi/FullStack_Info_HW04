@@ -2,7 +2,8 @@
 // https://code.sololearn.com/Wj7ZWBg5m2OG/#html
 
 
-// Initial timeout function for load effect, only worked nice on my screen.
+// Initial timeout function for load effect, only worked nice on my screen, because it depended on its size.
+// Added a more optimal way for this in the loop function below.
 // setTimeout(function(){
 //     $('.main_sect').css({ "display": "inline-block"});
 //     $('#SearchSect').css({ "display": "block"});

@@ -1,4 +1,4 @@
-// Declaration of variables to track results printed until now
+// Declaration of counter variables, used to save results, and to track how many have been printed until now
 var results;
 var i = 0;
 var printed = 0;
@@ -10,12 +10,9 @@ function callAPI(query) {
 		'limit': '200'},
 		function(data) {
 			
-			// PUT IN YOUR CODE HERE TO PROCESS THE SOUNDCLOUD API'S RESPONSE OBJECT
-			// HINT: CREATE A SEPARATE FUNCTION AND CALL IT HERE
 			results = data;
 			for (i; i < results.length && i <= 19; i++) { 
     			
-    			// console.log( "Data Loaded: " + data[i].title + data[i].permalink_url);
     			$('#ResultsSect').find('table').append("<tr class='res'><td><img  class='pic' onerror=\"this.style.visibility='hidden'\"; src="+results[i].artwork_url+"></td><td class='title'><p>" + results[i].title + "</p></td><td class='artist'><p>"+ results[i].user.username +"</p></td><td class='but'><button class='play' value="+ results[i].permalink_url +">&#9654;</button></td><td class='but'><button class='add'>Add to playlist</button></td></tr>");
 				
 			}
@@ -34,7 +31,7 @@ function changeTrack(url) {
       key: "b3179c0738764e846066975c2571aebb",
       auto_play: true,
       align: "bottom",
-      // My custom stratus.css hosted on dropbox
+      // Link to my custom stratus.css hosted on dropbox
       // theme: "https://dl.dropbox.com/s/zke35uub03m6btd/stratus.css?dl=1",
       theme: "https://stratus.soundcloud.com/themes/dark.css",
       color: "red",
@@ -48,15 +45,15 @@ $("#search").on('keyup', function (e) {
         
         $('.res').remove();
 
-    	// once the document loads, create new item with this function
     	var user_input = $(this).val();
     
    		callAPI(user_input);
 
+   		// Empty the input box
    		$(this).val('');
 
+   		// set the counters to 0 to count from the beginning for the new results
    		printed = 0;
-
    		i = 0;
    		
     }
@@ -67,15 +64,15 @@ $("#submit").on('click', function() {
     
 	$('.res').remove();
 
-    // once the document loads, create new item with this function
     var user_input = $(this).parent().find('#search').val();
     
     callAPI(user_input);
 
+    // Empty the input box
     $(this).val('');
 
+    // set the counters to 0 to count from the beginning for the new results
     printed = 0;
-
    	i = 0;
 
 });
@@ -85,15 +82,13 @@ $(".main_sect").on( 'click', '.add', function(event) {
 
 	console.log($(this).parents('tr:first').find('.title').html());    
 
+	// here we extract all the needed values from the song we want to add to the playlist
 	var title = $(this).parents('tr:first').find('.title').html();
 	var artwork = $(this).parents('tr:first').find('.pic').attr('src');
 	var permalink = $(this).parents('tr:first').find('.play').val();
 	var user = $(this).parents('tr:first').find('.artist').html();
 
-	console.log(title);
-	console.log(artwork);
-	console.log(permalink);
-
+	// This appends all the extracted values to my playlist table
 	$('#PlaylistSect').find('table').append("<tr><td><img class='pic' onerror=\"this.style.visibility='hidden'\"; src="+artwork+"></td><td class='title'><p>" + title + "</p></td><td class='artist'><p>" + user + "</p></td><td class='but'><button class='play' value="+ permalink +">&#9654;</button></td><td class='but'><button class='up'>Up</button><button class='down'>Down</button></td><td class='but'><button class='close'>X</button></td></tr>");
 
 });

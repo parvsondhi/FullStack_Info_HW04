@@ -4,7 +4,7 @@
 
         <title> HW04 Soundcloud HW </title>
         
-        
+        <!-- Set character set to UTF-8 to be able to print Greek and Cyrillic characters -->
         <meta charset="utf-8"/>
 
         <!-- My CSS -->
@@ -13,6 +13,7 @@
         <!-- JQuery -->
         <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+        
         <!-- Stratus Player -->
         <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
         
@@ -22,14 +23,15 @@
     
     <body>
         
+        <!-- Canvas element to draw the matrix effect on -->
         <canvas id="c" ></canvas>
         
+        <!-- Blinking author alement -->
         <span id = "author">@</span>
         
         <header>
             
             <h1>The Coolest Streaming Service</h1> <h2>...powered by Soundcloud&#169;</h2></h2>
-            <!-- <h1>The Coolest, Most Kickass Streaming Service, powered by Soundcloud(c)</h1> -->
 
         </header>
 
@@ -39,7 +41,6 @@
             
             <div class="user_input">
                 <input type="text" name="Search" id="search">
-                <!-- <input type="submit" value="Submit" id="submit"> -->
                 <button id="submit">Search</button>
             </div> 
 
@@ -80,7 +81,9 @@
 
 
     </body>
+    
     <!-- My JS -->
     <script type="text/javascript" src="startercode_HW4_skeleton.js"></script>
+    <!-- Matrix JS -->
     <script type="text/javascript" src="matrix/matrix.js"></script>
 </html>
