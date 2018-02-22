@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> SounD ClouD </title>
+   		<link rel="stylesheet" href="_css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<img id="logo" src="_css/logo.png" alt="soundcloud Logo">
+			<h1> SoundCloud Search</h1>
+		</header>
+
+		<p id="init"> Enter Something to Search. Use the play button to play. Use the add to playlist button to add to your playlist. Use the remove from the playlist button to remove from the playlist. Use the Up and Down buttons to move Songs up and down in the playlist.</p>
+
+		<section id="searchBar">
+			<input id="searchBox"> </input>
+			<button id="searchButton"> Search </button>
+		</section>
+
+		<section id="container">			
+			<div id="searchResults">
+				<p> Search Results </p>
+				<table id="search">
+					<thead>
+						<th id="artworkColumn">Artwork</th>
+						<th id="titleColumn">Title</th>
+						<th id="artistColumn">Artist</th>
+						<th id="actionColumn"></th>
+						<th id="actionColumn"></th>
+						<tbody id="searchBody"></tbody>
+					</thead>
+				</table>
+			</div>
+
+			<div id="playlistResults">
+				<p> Playlist </p>
+				<table id="playlist">
+					<thead>
+						<th id="artworkColumn">Artwork</th>
+						<th id="titleColumn">Title</th>
+						<th id="artistColumn">Artist</th>
+						<th id="actionColumn"></th>
+						<th id="actionColumn"></th>
+						<th id="actionColumn"></th>
+						<tbody id="playlistBody"></tbody>
+					</thead>
+				</table>
+			</div>
+
+		</section>
+
+	</body>	
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+	<script type="text/javascript" src="_js/main.js"> </script>
+</html>
