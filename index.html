@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>SoundCloud</title>
+      <link rel="stylesheet" type="text/css" href="soundcloud.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+
+  </head>
+  <body>
+        <h1>
+            SoundCloud Search
+        </h1>
+        <p>
+            Enter something to search. Use the PLAY button to play. Use the ADD button to add to playlist. <br>Use the REMOVE button to remove from playlist. Use the UP and DOWN buttons to move songs up and down in the playlist.
+        </p>
+        <div id = "input_block">
+            <input id="input">
+            <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="search_button">SEARCH</button>
+        </div>
+        <div id="results">
+                <div id = "search_results">
+                        <h3>Search Results</h3>
+                        <table id = "table-search">
+                            <thead>
+                                <th>Artwork</th>
+                                <th>Title</th>
+                                <th>Artist</th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+        
+                            </tbody>
+                        </table>
+                </div>
+                <div id = "playlist">
+                        <h3>Playlist</h3>
+                        <table id = "table-playlist">
+                            <thead>
+                                <th>Artwork</th>
+                                <th>Title</th>
+                                <th>Artist</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody id = "playlist_table"></tbody>
+                        </table>
+                </div>
+        </div>
+
+
+        <script type="text/javascript" src="startercode_HW4_skeleton.js"></script>
+  </body>
+
+</html>
