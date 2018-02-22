@@ -1,0 +1,55 @@
+.search_result_container {
+    display: table;
+    width: 150px;
+}
+
+.song_info{
+	display: table-cell;
+	border: 1px solid #000000;
+	vertical-align: middle;
+	padding: 1px;
+	width: 100px;
+  	word-break: break-word;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
+}
+
+/*text {
+	overflow: hidden;
+    text-overflow:ellipsis;
+}*/
+
+/*#title.song_info, #artist.song_info, #play.song_info, #add_to.song_info{
+	padding: 51px 20px 51px 20px;
+}*/
+
+.main_container{
+	display: inline;
+}
+
+.main_display{
+	display: inline-block;
+
+}
+
+#url{
+	display: none;
+}
+
+#search_result{
+	display: inline;
+}
+
+#play_list{
+	display: inline;
+}
+
+p{
+	display: inline-block;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
