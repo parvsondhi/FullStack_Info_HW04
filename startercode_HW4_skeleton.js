@@ -2,7 +2,7 @@
 function callAPI(query) {
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
 		{'q': query,
-		'limit': '200'},
+		'limit': '20'},
 		function(data) {
 			// PUT IN YOUR CODE HERE TO PROCESS THE SOUNDCLOUD API'S RESPONSE OBJECT
 			// HINT: CREATE A SEPARATE FUNCTION AND CALL IT HERE
