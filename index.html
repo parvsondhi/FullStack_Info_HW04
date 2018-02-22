@@ -1,0 +1,44 @@
+<!-- Full Stack Webstie Development - HW 4 Soundcloud -->
+
+<html>
+<head>
+
+    <title> HW04 Soundcloud </title>
+    <link rel="stylesheet" href="_css/style.css">
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.min.js'></script>
+
+</head>
+<body>
+    <header>
+        <a href="https://soundcloud.com/"></a>
+    </header>
+
+    <section class="search-bar">
+        <!-- create input tag for user input -->
+        <input id="search-item-input">
+
+        <!-- button takes input and adds a new element with content to 'list_do' -->
+        <button id="new-item"> Search </button>
+    </section>
+
+    <section class="description">
+        <p>Enter something to search. Use the play button to play. Use the add to playlist button to add to playlist.</p>
+        <p>Use the remove from playlist button to remove from playlist. Use the Up and Down buttons to move songs up and down in the playlist.</p>
+    </section>
+
+    <div class="list_">
+        <!-- ability to move items between list_todo and list_doing -->
+        <h1 id="list_title"> Search Results </h1>
+        <div id="list_result"> </div>
+    </div>
+    <div class="list_">
+        <h1 id="list_title"> Playlist </h1>
+        <div id="list_playlist"> </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+<script type="text/javascript" src="_js/main.js"> </script>
+
+</html>
