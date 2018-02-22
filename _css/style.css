@@ -1,0 +1,46 @@
+body {
+	font-family: Arial;
+	margin: 10px;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+#container {
+	width: 100%;
+}
+
+#query-result {
+	padding: 5px;
+}
+
+#resultlist {
+	display: inline-block;
+	width: 45%;
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+#playlistlist {
+	display: inline-block;
+	width: 45%;
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+#artwork {
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#info {
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.artwork {
+	height: 100px;
+}
