@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> HW04 Soundcloud DIY </title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+        <script type="text/javascript"src="https://stratus.soundcloud.com/stratus.js"></script>
+    <!--    <script type='text/javascript' src="stratus-player.js"></script>-->
+        <script type="text/javascript" src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+
+    </head>
+    <body>
+            <header>
+                <span id="logo"><img src="https://help-assets.soundcloud.com/images/header/logo.png"></span>
+                <h1>Soundcloud Search</h1>
+                <h2>Enter something to search. Click &#10689; to play,  &#8853; to add to playlist, &#8861; to remove from it. Use &#9651; &#9661; to move songs up and down in the playlist</h2>
+            </header>
+
+            <section>
+                <!-- create input tag for user input -->
+                <input id="search-input">
+
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="search"> search </button>
+
+
+                <!-- ability to move items between list_todo, list_doing and list_done -->
+                <div id="container">
+               
+                <!-- create three columns of tasks, enable exchange between the columns -->    
+                    <div class="columns">
+                        <h2> Search Results </h2>
+                        <table id="search-results">
+
+                        </table>
+                    </div>
+
+                    
+                    <div class="columns"> 
+                        <h2> Playlist </h2>
+                        <div id="playlist"> 
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <script type="text/javascript" src="/main.js"> </script>
+    </body>
+</html>
