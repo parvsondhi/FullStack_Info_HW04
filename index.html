@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundCloud Search</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+	<script type="text/javascript" src="startercode_HW4_skeleton.js"></script>
+	
+</head>
+<body>
+<h1>SoundCloud Music Search</h1>
+<p>This site is to search through the music of soundcloud.<br>Type in an artist and add songs to the playlist.<br>Feel free to rearrange the songs by pressing the arrows.<br>You can also remove songs from the playlist. And of course Play the songs with the play button.</p>
+<section>
+	<!--Takes inputs and searches for artist. Uses the value name to search in js. -->
+	<div>
+		Search for an artist: <input id="query">
+		<button id="submit" name="button">SUBMIT</button>
+
+
+		
+
+	</div>
+	<br><br>
+
+	<div class="result">
+		<h2>Search Results</h2>
+		<table id="bands">
+			<b>
+			<th>Artwork</th>
+			<th>Title</th> 
+			<th>Artist</th></b>
+		</table>
+
+	</div>
+
+	<div class="playlist">
+		<h2>Playlist</h2>
+			<table id="my-bands">
+			<b>
+			<th>Artwork</th>
+			<th>Title</th> 
+			<th>Artist</th></b>
+		</table>
+
+	</div>
+
+
+
+</section>
+
+</body>
+</html>
