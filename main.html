@@ -1,0 +1,75 @@
+<!-- QUERYING SOUNDCLOUD’S API (9 total points)
+    (2 point) User can input text to search SoundCloud’s API
+    (1 point) Use the provided callAPI() function.
+    Hint: You’ll need to pass in the user’s search query as the argument for the callAPI() function.
+    (6 points) The first 20 results from the response object are rendered on the page. Each song result displays the following information for that song:
+    Song title
+    Artist
+    Picture
+ 
+
+PLAYING SONGS VIA THE STRATUS PLUGIN (5 total points)
+    (3 points) User can click a ‘play’ button attached to each song result to play that song via the Stratus player plugin.
+    (2 points) Use the provided changeTrack() function and pass in the song’s permalink URL as the argument for changeTrack().
+    Hint: Find the ‘permalink_url’ field for each song in the SoundCloud API response object and pass this URL as the argument for the changeTrack() function.
+    Cut and paste the following link to the Stratus player JS file in your HTML file: <script type='text/javascript' src="stratus-player.js"></script>
+     
+
+CREATING A PLAYLIST (12 total points)
+    User can create a playlist of songs by picking individual songs from the search results.
+    (2 points) User can click an ‘add to playlist’ button attached to each song result to add a song to the playlist.
+    (2 point) Songs are added to the top of the playlist.
+    (2 point) Songs are not ‘removed’ from the search results when they’re added to the playlist. Hint: use the jQuery .clone() method to prevent them from being removed from the search results.
+    (2 point) User can remove songs from the playlist. Hint: use the jQuery .remove() method.
+    (2 points) User can move songs up or down in the playlist one spot at a time. Hint: use the jQuery .prev(), .next(), .insertBefore(), and .insertAfter() methods.
+    (2 point) User can play songs that are in the playlist. This play functionality is the same as the play functionality in the search results. -->
+
+<html>
+<head>
+
+    <title> HW04 SoundCloud </title>
+    <!-- <link rel="stylesheet" href="_css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
+</head>
+    <body>
+            <header>
+            </header>
+                
+            <div>
+                <h2>Soundcloud Search</h1>
+                <p>Enter something to search. Use play button to play. Add to playlist, remove from paylist and use up/down buttons to change order of songs in playlist.</p>
+                <button id="search">Search</button>
+                <input id="search-input">   
+            </div>
+            
+            <section>
+                <div id="songs">
+                    <h3>Search Results</h1>
+                    <table id="results">
+                        <tr>
+                            <th>Artwork</th>
+                            <th>Title</th>
+                            <th>Artist</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>Playlist</h1>
+                    <table>
+                        <tr>
+                            <th>Artwork</th>
+                            <th>Title</th>
+                            <th>Artist</th>
+                        </tr> 
+                    </table>
+                    <table id="playlist"> 
+                    </table>
+                </div>
+            </section>
+            
+            <script type="text/javascript" src="./startercode_HW4_skeleton.js"> </script>
+    </body>
+</html>
