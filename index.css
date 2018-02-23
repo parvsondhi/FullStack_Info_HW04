@@ -1,0 +1,12 @@
+h1 {
+	font-weight: bold;
+}
+
+#r1, #r2 {
+	display: inline-block;
+}
+
+.columns {
+	border-style: solid;
+	padding: 2px;
+}
