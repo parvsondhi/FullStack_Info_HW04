@@ -1,0 +1,70 @@
+.searchResults_div {
+	display:inline-block;
+	border: 1px solid #000000;
+}
+
+.table_title {
+	display: inline-block;
+	width: 49%;
+}
+
+#search_table {
+	width:49%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#playlist_table {
+	width:49%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.picture {
+	width:40px;
+}
+
+#artwork_lable {
+	font-weight: bold;
+}
+
+#title_lable {
+	font-weight: bold;
+}
+
+#artist_lable {
+	font-weight: bold;
+}
+
+.artwork_col {
+	width:5%;
+}
+
+.title_col {
+	width:18%;
+}
+
+.artist_col {
+	width:12%;
+}
+
+.play_col {
+	width:3%;
+}
+
+.addtoplay_col {
+	width:12%;
+}
+
+.remove_col {
+	width:1%;
+}
+
+.up_col {
+	width:1%;
+}
+
+.down_col {
+	width:1%;
+}

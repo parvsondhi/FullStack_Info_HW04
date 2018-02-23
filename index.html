@@ -1,0 +1,78 @@
+<html>
+<head>
+
+    <title> Soundcloud</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+    <body>
+        <header>
+            <h2>Soundcloud</h2>
+        </header>
+
+        <section id="search_section" class='search'>
+            <input id="search_box" class="search" type="text" placeholder="Search..">
+            <button id="search_button" class="search" type="button"> Search </button>
+        </section>
+        
+        <section>
+            <div class="table_title">
+                <h4>Search results</h4>
+            </div>
+
+            <div class="table_title">
+                <h4>Playlist</h4>
+            </div>
+        </section>
+
+        <table id="search_table">
+            <thead>
+                <tr>
+                    <th id="artwork_lable" class="artwork_col"></th>
+                    <th id="title_lable" class="title_col">Title</th>
+                    <th id="artist_lable" class="artist_col">Artist</th>
+                    <th class="play_col"></th>
+                    <th class="addtoplay_col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="artwork_col"></td>
+                    <td class="title_col"></td>
+                    <td class="artist_col"></td>
+                    <td class="play_col"></td>
+                    <td class="addtoplay_col"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="playlist_table">
+            <thead>
+                <tr>
+                    <th id="artwork_lable" class="artwork_col"></th>
+                    <th id="title_lable" class="title_col">Title</th>
+                    <th id="artist_lable" class="artist_col">Artist</th>
+                    <th class="play_col"></th>
+                    <th class="remove_col"></th>
+                    <th class="up_col"></th>
+                    <th class="down_col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="artwork_col"></td>
+                    <td class="title_col"></td>
+                    <td class="artist_col"></td>
+                    <td class="play_col"></td>
+                    <td class="remove_col"></td>
+                    <td class="up_col"></td>
+                    <td class="down_col"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script type="text/javascript" src="main.js"> </script>
+        <script type='text/javascript' src="https://stratus.soundcloud.com/stratus.js"></script>
+    </body>
+</html>
