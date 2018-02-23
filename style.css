@@ -1,0 +1,116 @@
+body {
+	background-color: #ff7700;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+}
+
+img#logo {
+	width: 100px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#top {
+	text-align: center;
+}
+
+#themainshow {
+	min-width: 1000px;
+	margin-top: 10px;
+}
+
+#results {
+	min-width: 400px;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+#playlist{
+	min-width: 400px;
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+.search {
+	display: inline-block;
+}
+
+button {
+   font-size: 18px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+p.url {
+	display: inline;
+	font-size: 0;
+}
+
+.song {
+	height: 80px;
+	background-color: white;
+	border: solid grey 3px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.descriptor {
+	display: inline-block;
+	width: 220px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top;
+}
+
+.half {
+	width: 49%;
+	background-color: grey;
+	display: inline-block;
+}
+
+/* Changes the buttons appearances' */
+
+#results #moveup, #results #movedown {
+	display: none;
+}
+
+#play {
+	visibility: visible;
+		display: inline-block;
+		float: right;
+}
+
+#results .queueup {
+	display: inline-block;
+	float: left;
+}
+
+#playlist .queueup {
+	display: none;
+}
+
+#delete {
+	float: right;
+}
+
+#results #delete {
+	display: none;
+}
+
+#playlist #moveup, #playlist #movedown {
+	float: left;
+}
+.queueup, .added {
+	float: left;
+	width: 75px;
+}
+
+.artwork {
+	display: inline;
+	height: 82px;
+	width: 82px;
+	text-align: right;
+}
+
