@@ -1,0 +1,28 @@
+div #songs {
+    width: 99%
+    }
+
+#results-box {
+    display: inline-block;
+    width: 40%;
+}
+
+#playlist-box {
+    display: inline-block;
+    width: 59%;
+}
+
+#results {
+    width: 40%;
+}
+#playlist {
+    width: 59%;
+}
+
+table {
+    border: 1px solid black;
+    display: inline-block;
+}
+td {
+    border: 1px solid black;
+}
