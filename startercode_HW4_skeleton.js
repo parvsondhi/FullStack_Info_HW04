@@ -5,7 +5,9 @@ $(document).ready(function(){
 	// 	key: "b3179c0738764e846066975c2571aebb",
 	// 	links: "https://soundcloud.com/tycho/awake-com-truise-remix",
 	// });
+
 });
+
 
 // Event Handler for Search Button
 $("#new-item").on('click', function() {
@@ -20,7 +22,6 @@ function callAPI(query) {
 		{'q': query,
 		'limit': '200'},
 		function(data) {
-			console.log(data);
 			parseScResponse(data);
 		},'json'
 	);
@@ -29,21 +30,26 @@ function callAPI(query) {
 // Parses Soundcloud results object and displays results
 	function parseScResponse(object) {
 
-		// If value.artwork_url == 'null', use default SC icon
+		// Clear table
+		$('#results_tbl tr').remove();
 
 		$.each(object, function( index, value ) {
-			$('#results').append("<tr>")
-			$('#results').append("<td><img src=" + value.artwork_url + "></img></td>")
-			$('#results').append("<td>" + value.title + "</td>")
-			$('#results').append("<td><button class='btn play' value=" + value.permalink_url + " onclick='changeTrack(this.value)'>Play</button></td>")
-			$('#results').append("</tr>")//permalink_url
+
+			// If value.artwork_url == 'null', use default SC icon
+			if (value.artwork_url == null) {
+				var picture = 'soundcloud-icon-100x100.png';
+				console.log('no picture');
+			} else {
+				var picture = value.artwork_url;
+			}
+
+			// Build table row
+			$('#results_tbl').append("<tr><td><img src=" + picture + "></img></td><td>" +
+			value.title + "</td><td><button class='btn play' value=" + value.permalink_url +
+			" onclick='changeTrack(this.value)'>Play</td><td></button><button class='btn queue' id='queue'>Add/Remove</button></td></tr>")
+
 		});
 	}
-
-// Test to see what the button sends
-function testButton(url) {
-	alert(url);
-}
 
 // 'Play' button event handler - play the track in the Stratus player
 function changeTrack(url) {
@@ -60,21 +66,27 @@ function changeTrack(url) {
 }
 
 // Add Song to top of playlist
-function addToPlaylist() {
-
-}
+$("#results").on('click','#queue', function() {
+	var clone = $(this).parents( "tr" ).clone()// $(this).html("remove");
+	clone.append("<td><button class='btn up'>up</button></td>");
+	clone.append("<td><button class='btn down'>down</button></td>");
+	clone.prependTo("#playlist_tbl");
+	// $("#playlist_tbl").prepend(song);
+});
 
 // Remove Song from playlist
-function removeFromPlaylist() {
+$("#playlist").on('click','#queue', function() {
+	$(this).parents( "tr" ).remove();
+});
 
-}
-
- // Move song in playlist up in the queue
- function moveUp() {
-
- }
-
- // Move song in playlist down in the queue
- function moveDown() {
-
- }
+// Move song up or down in playlist order
+$("#playlist").on('click','.up,.down', function() {
+	var row = $(this).parents("tr:first");
+	if ($(this).is(".up")) {
+						// alert('up');
+						row.insertBefore(row.prev());
+        } else {
+						// alert('down');
+            row.insertAfter(row.next());
+        }
+});

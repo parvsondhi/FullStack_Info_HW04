@@ -1,0 +1,108 @@
+header {
+	/* background-color: #026aa7; */
+	height: 60px;
+	text-align: center;
+	margin: 5px 8px;
+}
+
+body {
+	background-color: black;
+	margin: 0px;
+	color: #00ff0e;
+	font-family:'Oxygen Mono';
+}
+
+/* Add Your CSS */
+/* #5 to do and done should be styled differently */
+#search-box {
+	width: 80%;
+	margin: auto;
+}
+
+input {
+	/* width: 80%; */
+	/* text-align: center; */
+	background-color: black;
+	color: #00ff0e;
+	font-family:'Oxygen Mono';
+	font-size: 16px;
+	border: 1px solid #00ff0e;
+	width: 91%;
+	/* align: center; */
+	/* margin-left:10px; */
+}
+
+#main {
+	width: 80%;
+	margin: auto;
+}
+
+#results {
+	width: 49%;
+	margin: auto;
+	display: inline;
+	float: left;
+}
+
+#playlist {
+	width: 49%;
+	margin: auto;
+	display: inline;
+	float: left;
+}
+
+.add {
+	width: 4%;
+}
+
+.btn {
+  border: 2px solid #00ff0e;
+  background-color: black;
+  color: #00ff0e;
+  font-size: 12px;
+  cursor: pointer;
+	font-family:'Oxygen Mono'
+}
+
+.btn:hover {
+  background-color: #00ff0e;
+  color: black;
+}
+
+.sm {
+	font-size: 10px;
+	padding: 0px;
+}
+
+#lists {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+li {
+	list-style: none;
+}
+
+#list_todo li:before{
+	content: "[ ]"
+}
+
+#list_doing li:before{
+	content: "[X]"
+}
+
+#list_done li:before{
+
+}
+
+.list {
+	float: left;
+	display: inline;
+	width: 50%;
+	/* padding-right: 100px; */
+}
+
+.list h1 {
+	text-decoration:underline;
+}
