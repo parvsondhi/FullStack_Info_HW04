@@ -72,11 +72,10 @@ function compileResults(icon, title, username, url) {
 // Play the song when clicking the play button
 $(document).on('click', '.play-button', function() {
 	var url = $(this).attr('value');
-	console.log(url);
 	changeTrack(url);
 })
 
-// Adding song to playlist
+// Adding song to playlist (remove move-to-playlist button and add trash, up/down buttons)
 $(document).on('click', '.playlistButton', function() {
 	var row = $(this).parents('tr').clone().find('td:last').remove().end();
 	row.append('<td><input type="image" src="assets/trash.png" class="deleteSong"/></td></tr>');
