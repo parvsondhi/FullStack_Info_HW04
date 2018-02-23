@@ -1,0 +1,58 @@
+/*h2 {
+	display: inline-block;
+	width: 48%;
+}*/
+
+.result {
+	display: inline-block;
+	width: 40%;
+	margin-left: 10%;
+	background-color: green;
+
+}
+
+.playlist {
+	display: inline-block;
+	width: 40%;
+	border-width: 5px;
+	border-color: black;
+	background-color: red;
+
+}
+
+table, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px;
+}
+
+body {
+	background-color: orange;
+
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+button.play-button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+button.add-playlist {
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
