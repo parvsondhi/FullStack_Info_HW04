@@ -1,0 +1,73 @@
+#search-results {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#playlist {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#song-display {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#search-results button.remove-button {
+    display: none;
+}
+
+#search-results button.up-button {
+    display: none;
+}
+
+#search-results button.down-button {
+    display: none;
+}
+
+#playlist button.add-button {
+    display: none;
+}
+
+.result-artist {
+    margin: 5px;
+}
+
+.result-title {
+    margin: 5px;
+}
+
+button {
+    margin: 3px;
+    border: solid black 1px;
+    height: auto;
+}
+
+header {
+    text-align: center;
+}
+
+#search-box {
+    text-align: center;
+    
+}
+
+#search-query {
+    height: 30px;
+    width: 30vw; 
+}
+
+#search-button {
+    border: solid black 1px;
+    height: 30px;
+}
