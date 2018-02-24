@@ -1,0 +1,1 @@
+web: gnuicon routes:app
