@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<title> HW04 Advanced JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.0.min.js"></script>
+
+</head>
+
+<body>
+	<header></header>
+
+	<section>
+        <p>Enter something to search. Use the play button to play. You can also add songs to a playlist. Feel free to move songs around as well!</p>
+		<div class="search-song">
+            <!-- create input tag for user input -->
+            <input id="text-entry">
+
+            <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="search-song-button"> Search </button>
+        </div>
+
+        <div class="columns">
+            <h1> Search Results </h1>
+            <div id="search-results"> </div>
+        </div>
+
+        <div class="columns">
+            <h1> Playlist </h1>
+            <div id="playlist"> </div>
+        </div>
+
+
+	</section>
+
+	<script type="text/javascript" src="main.js"> </script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+	
+
+</body>
+
+</html>
