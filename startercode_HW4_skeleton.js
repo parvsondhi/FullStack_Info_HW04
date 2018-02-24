@@ -1,3 +1,15 @@
+
+var user_input;
+
+$(document).ready(
+    $("#search").on('click', function() {
+        // once the document loads, create new search request
+        user_input = $('#search-input').val();
+    })
+);
+
+console.log('user_input');
+
 // Event hander for calling the SoundCloud API using the user's search query
 function callAPI(query) {
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
