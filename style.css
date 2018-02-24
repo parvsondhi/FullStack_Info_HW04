@@ -1,0 +1,22 @@
+.columns {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+body {
+	font-family: helvetica;
+}
+
+#title{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+p{
+	display:inline-block;
+}
+
+#song-selection{
+	margin-bottom: 40px;
+}
