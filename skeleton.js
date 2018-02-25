@@ -44,10 +44,12 @@ $(document).on('click', '#search-button', function() {
 // When the add button is clicked, add this song to the top of the playlist
 $(document).on('click', ".add-button", function() {
 	$.clone(this);
-	var song_to_add = $(this).parent();
 	$(this).after("<button class='move-up-button'>Move Up</button><button class='move-down-button'>Move Down</button>");
 	$(this).html("Remove").removeClass("add-button").addClass("remove-button");
+	var song_to_add = $(this).parent();
 	song_to_add.clone().prependTo("#playlist");
+
+	//change back to the original song format for the search result column
 	$(this).html("Add").removeClass("remove-button").addClass("add-button");
 	$("#search-results .move-up-button" ).remove();
 	$("#search-results .move-down-button" ).remove();
