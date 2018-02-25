@@ -1,0 +1,93 @@
+
+body {
+	background-color: lightgreen;
+	font-family: arial;
+}
+
+#search-input {
+	display: inline-block;
+}
+
+#search-results {
+	display: inline-block;
+	width: 95%;
+}
+
+#column {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+}
+
+#playlist{
+	display: inline-block;
+	width: 95%;
+}
+
+#song {
+	height: 240px;
+	margin-top: 2px;
+	padding: 5px;
+	background-color: yellow;	
+}
+
+#song-title {
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#artwork-parent {
+	text-align: center;
+	float: center;
+}
+
+#artwork {
+	display: inline;
+	height: 82px;
+	width: 82px;
+	text-align: center;
+	float: center;
+	margin-top: 10px;
+}
+
+#plink {
+	visibility: hidden;
+}
+
+.play-button {
+	visibility: visible;
+	display: inline-block;
+	float: center;
+}
+
+.add-button {
+	display: inline-block;
+	float: center;
+}
+
+.remove-button {
+	display: inline-block;
+	float: center;
+}
+
+.move-up-button {
+	display: inline-block;
+	float: center;
+}
+
+.move-down-button {
+	display: inline-block;
+	float: center;
+}
+
+
+
+button {
+   font-size: 14px;
+}
+
+img {
+	width: 80px;
+}
+
