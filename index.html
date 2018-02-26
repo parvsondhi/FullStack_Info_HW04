@@ -1,0 +1,49 @@
+<html>
+<head>
+
+    <title> Soundcloud </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>   
+
+
+</head>
+    <body>
+            <header>
+                <h5> Soundcloud Search </h5>
+            </header>
+
+            <section>
+                <div> 
+                    <h5> Enter something to search. Use the play button to play. Use the add to playlist button to add to playlist. Use the remove from playlist button to remove from playlist. Use the up and down buttons to move songs up and down in the playlist </h5>
+                </div>
+                <div>
+                <div id="input-area" class="row">
+                    <input type="text" id="search-term" >
+                    <button id="search"> Search </button>
+                    <!-- create input tag for user input -->
+
+                </div>
+
+                </div>
+                <div class="row">
+                    <div class="list">
+                        <!-- ability to move items between list_todo and list_completed -->
+                        <h5> Search Results </h5>
+                        <div class="extra-padding-panel" id="results-list"> </div>
+                    </div>
+
+                    <div class="list">
+                        <h5> Playlist </h5>
+                        <div class="extra-padding-panel" id="playlist"> </div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="startercode_HW4_skeleton1.js"> </script>
+    </body>
+</html>
