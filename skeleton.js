@@ -60,14 +60,17 @@ $("#results").on('click', ".queueup", function() {
 
 });
 
+
 $("#playlist").on('click', "#moveup", function() {
         var elm = $(this).parent();
     	elm.insertBefore(elm.prev());
 });
 
+
 $("#playlist").on('click', "#delete", function() {
         $(this).parent().remove()
 });
+
 
 $("#playlist").on('click', "#movedown", function() {
         var elm = $(this).parent();

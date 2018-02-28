@@ -1,7 +1,7 @@
 body {
-	background-color: #ff7700;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: Verdana, helvetica, sans-serif;
 	font-size: 15px;
+	background-color: #ff8800;
 }
 
 img#logo {
@@ -10,11 +10,11 @@ img#logo {
 	margin-bottom: 30px;
 }
 
-#top {
+#header {
 	text-align: center;
 }
 
-#themainshow {
+#content {
 	min-width: 1000px;
 	margin-top: 10px;
 }
@@ -34,7 +34,7 @@ img#logo {
 }
 
 #searching {
-	color:white;
+	color: white;
 	margin-bottom: 10px;
 }
 
@@ -49,20 +49,13 @@ img#logo {
 	padding-left: 10px;
 }
 
-.url {
-	background-color: red;
-}
-
 button {
-	font-size: 18px;
-	border: 2px solid black;
-	border-radius: 3px;
-	font-family: helvetica;
 	color: var(--color-snow);
 	background: #A9A9A9;
 	text-align: center;
 	color: white;
 	font-size: 15;
+	font-family: helvetica;
 	padding: 10px;
 	padding-left:20px;
 	padding-right:20px;
@@ -74,7 +67,6 @@ button {
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	outline: none;
-
 }
 
 button #play {
@@ -85,10 +77,6 @@ button #play {
 	display: none;
 }
 
-p.a {
-	display: inline;
-	font-size: 0;
-}
 
 #play {
 	visibility: visible;
@@ -108,7 +96,6 @@ p.a {
 .song {
 	height: 80px;
 	background-color: white;
-	border: solid grey 3px;
 	padding: 10px;
 	margin-top: 10px;
 }
@@ -121,7 +108,7 @@ p.a {
 	vertical-align: top;
 }
 
-.half {
+.column {
 	width: 49%;
 	display: inline-block;
 	border: none;
