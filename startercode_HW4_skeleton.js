@@ -38,20 +38,6 @@ function callAPI(query) {
 	);
 }
 
-// 'Play' button event handler - play the track in the Stratus player
-function changeTrack(url) {
-	// Remove any existing instances of the Stratus player
-	$('#stratus').remove();
-
-	// Create a new Stratus player using the clicked song's permalink URL
-	$.stratus({
-      key: "b3179c0738764e846066975c2571aebb",
-      auto_play: true,
-      align: "bottom",
-      links: url
-    });
-}
-
 function parseSoundCloudAPI (data) {
 	// attributes for searched song are pushed to the global 'search' variable
 	search.push({
@@ -70,7 +56,6 @@ function parseSoundCloudAPI (data) {
 function populatePage () {
 	// populates the interface with appropriate divs
 		for (i=0; i < 20; i++) {
-		console.log(search[i].permalink_url);
 		$('#search-results').prepend('<div class="row" id="search-row-'+i+'"></div>');
 		$('#search-row-'+i).prepend('<div class="col s2"><a id="add-to-playlist-track" class="waves-effect waves-light btn" onclick="addToPlaylist(this);">'+'ADD TO PLAYLIST'+'</a></div>');
 		$('#search-row-'+i).prepend('<div class="col s2"><a id="play-track" class="waves-effect waves-light btn" onclick="changeTrack('+search[i].permalink_url+');">PLAY</a></div>');
@@ -81,12 +66,12 @@ function populatePage () {
 }
 }
 
-$('#search-results').on('click','#play-track', function(){
+// $('#search-results').on('click','#play-track', function(){
 	
-	var song = $(this).html();
-	alert(song);
-	// changeTrack('https://soundcloud.com/prfftt/blink-182-adams-song-prfftt');
-});
+// 	var song = $(this).html();
+// 	alert(song);
+// 	// changeTrack('https://soundcloud.com/prfftt/blink-182-adams-song-prfftt');
+// });
 
 
 // function play (element) {
@@ -96,6 +81,21 @@ $('#search-results').on('click','#play-track', function(){
 
 function addToPlaylist (element) {
 	window.alert("ADD TO PLAYLIST!!!!");
+}
+
+// 'Play' button event handler - play the track in the Stratus player
+function changeTrack(url) {
+	// Remove any existing instances of the Stratus player
+	$('#stratus').remove();
+
+	// Create a new Stratus player using the clicked song's permalink URL
+	$.stratus({
+      key: "b3179c0738764e846066975c2571aebb",
+      auto_play: true,
+      align: "bottom",
+      links: url
+    });
+    alert("changeTrack worked");
 }
 
 
