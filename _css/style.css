@@ -1,0 +1,44 @@
+header {
+	background-color: orange;
+	height: 30px;
+	text-align: center;
+	padding: 5px 8px;
+}
+
+header a {
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	background-image: url(https://a.trellocdn.com/dist/images/header-logo-2x.01ef898811a879595cea.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	display: inline-block;
+	background-size: 80px 30px;
+}
+
+body {
+	background-color: orange;
+	margin: 0px;
+}
+
+div.p{
+    display: block;
+    width: 45%;
+    float:left;
+}
+
+#t1{
+    width:100%;
+}
+#t2{
+    width:100%;
+}
+
+
+table, th, td{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+/* Add Your CSS */

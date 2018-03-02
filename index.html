@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <title> HW04 </title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+
+    <link rel="stylesheet" href="_css/style.css">
+
+</head>
+    <body>
+            <header>
+                <a href="https://trello.com"></a>
+            </header>
+
+            <section>
+                <!-- create input tag for user input -->
+                
+                <h1>SoundCloud search</h1>
+                <div>-type in the name of the song and click 'search' to find 20 most relevent results</div>
+                <div>-click 'play' to play a song, add song to play list and move songs across the playlist using 'moveup' and 'movedown' button</div>
+                <div>-click 'remove' to remove a song from playlist</div>
+                <input id="search_input">
+
+                <!-- button takes input and adds a new element with content to 'list_do' -->
+                <button id="search"> Search </button>
+
+
+                <!-- ability to move items between list_todo and list_doing -->
+                <div>
+                    <div class = 'p'> 
+                        <h3>Search Results</h3>
+                        <table style= 'width:80%'>      
+                            <col style="width:50%">
+                            <col style="width:20%">
+                            <col style="width:5%">
+                            <tr>
+                            <th>Song Title</th>
+                            <th>Artist</th> 
+                            <th>Picture</th>
+                            </tr>
+                        </table>
+                        <table id = 't1'>
+
+                        
+                        </table>
+                    </div>
+
+                    <div class = 'p'> 
+                        <h3>PlayList</h3>
+                        <table style= 'width:70%'>      
+                            <col style="width:60%">
+                            <col style="width:35%">
+                            <col style="width:5%">
+                            <tr>
+                            <th>Song Title</th>
+                            <th>Artist</th> 
+                            <th>Picture</th>
+                            </tr>
+                        <table id = 't2'>
+                            </table>
+                    </div>
+                </div>
+            </section>
+        
+            <script type="text/javascript" src="_js/stratus.js"></script>
+            <script type="text/javascript" src="_js/startercode_HW4_skeleton.js"> </script>
+    </body>
+</html>
