@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Soundcloud</title>
+		<link rel='stylesheet' href='style.css'>
+    	<script type='text/javascript' src='https://code.jquery.com/jquery-1.7.0.min.js'></script>
+    	<script type='text/javascript' src='http://stratus.sc/stratus.js'></script>
+    	<script src='https://connect.soundcloud.com/sdk/sdk-3.3.0.js'></script>
+
+	</head>
+
+	<body>
+			<div id = 'header'>
+				<img id = 'logo' src = 'soundcloud_logo.jpg'>
+			</div>
+
+			<div id = 'searching'>
+				Search for a song or artist...
+			</div>
+
+			<input id = 'search-input' type = 'text'>
+
+		 	<div class = 'search' id= 'search-button'>
+				 <button>Let's Go!</button>
+		 	</div>
+
+			<div id = 'content'>
+
+				<div class = 'column'>
+						<h2>Search Results</h2>
+						<div id = 'results'>
+							<p> </p>
+						</div>
+				</div>
+
+				<div class = 'column'>
+					<h2>Playlist</h2>
+					<div id = 'playlist'>
+					</div>
+				</div>
+
+			</div>
+
+	</body>
+
+	<script type = 'text/javascript' src = 'soundcloud_app.js'> </script>
+
+</html>
