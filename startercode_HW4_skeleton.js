@@ -10,6 +10,13 @@ $(document).ready( function () {
   	});
 });
 
+$("#search-results").on('click', '#add-to-playlist-track', function() {
+	$('#playlist-results').prepend('<div class="row" id="playlist-row"></div>');
+	var row = $(this).parent().parent().clone()
+	row.find('a.add-to-playlist-track').replaceWith('<a id="remove-from-playlist-track" class="waves-effect waves-light btn">'+'— PLAYLIST'+'</a>');
+	row.prependTo($('playlist-row'));
+});
+
 // Event hander for calling the SoundCloud API using the user's search query
 function callAPI(query) {
 	// function to create a loop that calls parseSoundCloudAPI
@@ -26,58 +33,50 @@ function callAPI(query) {
 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
 		{'q': query,
 		'limit': '200'},
+		// this is the data returned
 		function(data) {
 			// PUT IN YOUR CODE HERE TO PROCESS THE SOUNDCLOUD API'S RESPONSE OBJECT
 			// HINT: CREATE A SEPARATE FUNCTION AND CALL IT HERE
+			console.log(data)
 			search = data;
-			// for (i=0; i < 20; i++) {
-				populatePage()
-				// parseSoundCloudAPI(data);
-			// }
+			for (i=0; i < 20; i++) {
+				parseSoundCloudAPI(data[i]);
+				
+			}
+			populatePage()
 		},'json'
 	);
 }
 
 function parseSoundCloudAPI (data) {
 	// attributes for searched song are pushed to the global 'search' variable
+	
 	search.push({
-		"title": data[i].title,
-		"artwork":data[i].artwork_url,
-		"artist":data[i].user.username,
-		"link":data[i].permalink_url
-	});
+		"title": data.title,
+		"artwork":data.artwork_url,
+		"artist":data.user.username,
+		"link":data.permalink_url
 
-	if (search[i].artwork == null) {
-		search[i].artwork = "https://vignette.wikia.nocookie.net/mlpfanart/images/6/6f/Soundcloud_logo.png/revision/latest?cb=20120804030609"
+	});
+	if (data.artwork_url == null) {
+		data.artwork_url = "https://vignette.wikia.nocookie.net/mlpfanart/images/6/6f/Soundcloud_logo.png/revision/latest?cb=20120804030609";
 	}
-	populatePage();
+	// populatePage();
 }
 
 function populatePage () {
 	// populates the interface with appropriate divs
 		for (i=0; i < 20; i++) {
-		$('#search-results').prepend('<div class="row" id="search-row-'+i+'"></div>');
-		$('#search-row-'+i).prepend('<div class="col s2"><a id="add-to-playlist-track" class="waves-effect waves-light btn" onclick="addToPlaylist(this);">'+'ADD TO PLAYLIST'+'</a></div>');
-		$('#search-row-'+i).prepend('<div class="col s2"><a id="play-track" class="waves-effect waves-light btn" onclick="changeTrack('+search[i].permalink_url+');">PLAY</a></div>');
-		$('#search-row-'+i).prepend('<div class="col s2"><p>'+search[i].user.username+'</p></div>');
-		$('#search-row-'+i).prepend('<div class="col s2"><p>'+search[i].title+'</p></div>');
-		$('#search-row-'+i).prepend('<div id="search-track-img" class="col s2"><img id="search-track-img" src="'+search[i].artwork_url+'"/></div>');
-		
+			$('#search-results').prepend('<div class="row" id="search-row"></div>');
+			$('#search-row').prepend('<div class="col s2"><a id="add-to-playlist-track" class="waves-effect waves-light btn">'+'+ PLAYLIST'+'</a></div>');
+			$('#search-row').prepend('<div class="col s2"><a id="play-track" class="waves-effect waves-light btn" onclick="changeTrack('+i+');">' + 'PLAY' + '</a></div>');
+			$('#search-row').prepend('<div class="col s2"><p>'+search[i].user.username+'</p></div>');
+			$('#search-row').prepend('<div class="col s2"><p>'+search[i].title+'</p></div>');
+			$('#search-row').prepend('<div id="search-track-img" class="col s2"><img id="search-track-img" src="'+search[i].artwork_url+'"/></div>');
+		}
 }
-}
-
-// $('#search-results').on('click','#play-track', function(){
-	
-// 	var song = $(this).html();
-// 	alert(song);
-// 	// changeTrack('https://soundcloud.com/prfftt/blink-182-adams-song-prfftt');
-// });
 
 
-// function play (element) {
-// 	alert(element);
-// 	changeTrack(element);
-// }
 
 function addToPlaylist (element) {
 	window.alert("ADD TO PLAYLIST!!!!");
@@ -93,38 +92,6 @@ function changeTrack(url) {
       key: "b3179c0738764e846066975c2571aebb",
       auto_play: true,
       align: "bottom",
-      links: url
+      links: search[url].permalink_url
     });
-    alert("changeTrack worked");
 }
-
-
-
-
-// // Event hander for calling the SoundCloud API using the user's search query
-// function callAPI(query) {
-// 	$.get("https://api.soundcloud.com/tracks?client_id=b3179c0738764e846066975c2571aebb",
-// 		{'q': query,
-// 		'limit': '200'},
-// 		function(data) {
-// 			// PUT IN YOUR CODE HERE TO PROCESS THE SOUNDCLOUD API'S RESPONSE OBJECT
-// 			// HINT: CREATE A SEPARATE FUNCTION AND CALL IT HERE
-// 		},'json'
-// 	);
-// }
-
-// // 'Play' button event handler - play the track in the Stratus player
-// function changeTrack(url) {
-// 	// Remove any existing instances of the Stratus player
-// 	$('#stratus').remove();
-
-// 	// Create a new Stratus player using the clicked song's permalink URL
-// 	$.stratus({
-//       key: "b3179c0738764e846066975c2571aebb",
-//       auto_play: true,
-//       align: "bottom",
-//       links: url
-//     });
-// }
-
-

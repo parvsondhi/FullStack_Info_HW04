@@ -16,46 +16,45 @@
 
     <body>
             <header>
-                <p>SoundCloud Search</p>
+                <div id="icon">
+                    <img src="soundcloud-icon_white.png">
+                </div>
             </header>
 
             <section class="container">
-                <div class="row" id="intro-text">
-                    <h4>Enter something to search. Use the play button to play. Use the add to playlist button to add to a playlist. Use the remove from playlist button to remove from playlist. Use the up and down buttons to move songs up and down in the playlist.</h4>
-                </div>
                 <div class="row" id="header">
                     <div class="col s2">
                         <!-- button takes input and adds a new element with content to 'list_do' -->
                         <button class="btn waves-effect waves-light" type="submit" name="action" id="new-item"> SEARCH </button>
                     </div>
-                    <div class="col s4">
+                    <div class="col s8">
                         <!-- create input tag for user input -->
                         <input class="white-text" id="todo-item-input">
                     </div>
                 </div>
-                <div class="col s3 card grey lighten-2 card-content text-darken-4">
-                    <!-- ability to move items between search and playlist -->
-                    <h5>Search Results:</h5>
-                    <div class="row">
-                        <div class="col s3">Artwork</div>
-                        <div class="col s3">Title</div>
-                        <div class="col s3">Artist</div>
+                <div class="row">
+                    <div class="col s6 card grey lighten-2 card-content text-darken-4" id="track-cards">
+                        <!-- ability to move items between search and playlist -->
+                        <h5>Search Results:</h5>
+                        <div class="row">
+                            <div class="col s4">Artwork</div>
+                            <div class="col s4">Title</div>
+                            <div class="col s4">Artist</div>
+                        </div>
+                        <div class="row">
+                            <div id="search-results"></div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div id="search-results"></div>
-                    </div>
-                </div>
-                <div class="col s3 card grey lighten-2 card-content text-darken-4">
-                    <h5>Playlist</h5>
-                    <div class="row">
-                        <div class="col s3">Artwork</div>
-                        <div class="col s3">Title</div>
-                        <div class="col s3">Artist</div>
-                    <div class="row">
-                        <div id="artwork_playlist"></div>
-                        <div id="title_playlist"></div>
-                        <div id="artist_playlist"></div>
-                    </div>
+                    <div class="col s6 card grey lighten-2 card-content text-darken-4" id="track-cards">
+                        <h5>Playlist</h5>
+                        <div class="row">
+                            <div class="col s4">Artwork</div>
+                            <div class="col s4">Title</div>
+                            <div class="col s4">Artist</div>
+                        <div class="row">
+                            <div id="playlist-results"></div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </section>
