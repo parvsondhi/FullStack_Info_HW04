@@ -3,8 +3,9 @@
 <head>
 	<title>BonneyJS</title>
 	<link rel="stylesheet" href="index.css">
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.min.js'></script>
   	<script src="script.js"> </script>
+  	<script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
 
 </head>
 <body>
@@ -16,13 +17,13 @@
 	<button id=searchbutton> Search </button> <br>
 
 	<div>
-		<div id=r1>
+		<div id=songs>
 			Search Results<br>
-			<div class=columns>Artwork Title Artist</div>
+			<table id=resultssongs></table>
 		</div>
-		<div id=r2>
+		<div id=songs>
 			Playlist<br>
-			<div class=columns>Artwork Title Artist</div>
+			<table id=playlist></table>
 		</div>
 	</div>
 </body>
