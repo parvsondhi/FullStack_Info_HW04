@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title> HW04 SoundCloud </title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
+</head>
+
+    <body>
+            <header>
+                <div id="icon">
+                    <img src="soundcloud-icon_white.png">
+                </div>
+            </header>
+
+            <section class="container">
+                <div class="row" id="header">
+                    <div class="col s2">
+                        <!-- button takes input and adds a new element with content to 'list_do' -->
+                        <button class="btn waves-effect waves-light" type="submit" name="action" id="new-item"> SEARCH </button>
+                    </div>
+                    <div class="col s8">
+                        <!-- create input tag for user input -->
+                        <input class="white-text" id="todo-item-input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 card grey lighten-2 card-content text-darken-4" id="track-cards">
+                        <!-- ability to move items between search and playlist -->
+                        <h5>Search Results:</h5>
+                        <div class="row">
+                            <div class="col s4">Artwork</div>
+                            <div class="col s4">Title</div>
+                            <div class="col s4">Artist</div>
+                        </div>
+                        <div class="row">
+                            <div id="search-results"></div>
+                        </div>
+                    </div>
+                    <div class="col s6 card grey lighten-2 card-content text-darken-4" id="track-cards">
+                        <h5>Playlist</h5>
+                        <div class="row">
+                            <div class="col s4">Artwork</div>
+                            <div class="col s4">Title</div>
+                            <div class="col s4">Artist</div>
+                        <div class="row">
+                            <div id="playlist-results"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Import jQuery before materialize.js-->
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript" src="startercode_HW4_skeleton.js"></script>
+    </body>
+</html>
